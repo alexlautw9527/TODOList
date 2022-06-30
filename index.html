@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://kit.fontawesome.com/92d27cddf1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./scss/all.css">
+  <title>Document</title>
+</head>
+
+
+<body class="bg-main">
+  
+  <div class="container py-3">
+
+    <div class="row justify-content-center">
+      <div class="col-11 d-flex">
+        <img class="me-auto" src="./img/logo.svg" alt="">
+        <div class="px-4 d-none d-lg-flex align-items-center justify-content-end fw-bold">
+          冠廷的代辦
+        </div>
+  
+        <div class="d-flex align-items-center">
+          登出
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center mb-5 ">
+      <div class="col-11 col-lg-5 position-relative ">
+        <div class="shadow">
+          <input class="text-addTodo w-100 py-3 ps-3 border-0 rounded-5 position-relative" type="text" placeholder="新增待辦事項">
+        <a class="button-addTodo cursor-pointer" role='button'>
+          <img class="position-absolute end-2 top-50 translate-middle-y" src="./img/plus.svg" alt="">
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="noTodo flex-column flex-all-center">
+    <p class="mb-5">目前尚無待辦事項</p>
+    <img src="./img/empty.svg" alt="" srcset="">
+  </div>
+
+  <div class="container">
+    
+    <div class="row flex-column align-items-center">
+      <div class="todoTotal col-11 col-lg-5">      
+        <div class="shadow bg-white border-0 rounded-5  pb-3">
+          <div class="todoSelector d-flex text-center fw-bold">
+            <a class="todoSelector-item col py-3 border-2 border-bottom border-dark"
+            data-cate="all">全部</a>
+          
+            <a class="todoSelector-item col py-3 border-2 border-bottom"data-cate="todo">待完成</a>
+          
+            <a class="todoSelector-item col py-3 border-2 border-bottom"data-cate="done">已完成</a>
+          </div>
+          <div class="ps-3">
+            <ul class="todoList d-flex flex-column mb-3">
+              <li data-num="0" class="d-flex">
+                <div class="flex-grow-1 flex-v-center py-4 border-bottom">
+                  <label class="">
+                    <input class="me-2" type="checkbox">
+                    今天刷牙
+                  </label>
+                </div>
+                <div class="flex-all-center p-3">
+                  <i class="todoClear fa-solid fa-trash-can"></i>
+                </div>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-between">
+              <div class="todoList-num fw-bold"></div>
+              <a class="todo-allClear link-secondary pe-5">清除已完成項目</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

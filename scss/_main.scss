@@ -1,0 +1,100 @@
+.bg-main{
+  font-family: sans-serif;
+  background: linear-gradient(
+      172.7deg,
+      #ffd370 5.12%,
+      #ffd370 53.33%,
+      #ffd370 53.44%,
+      #ffffff 53.45%,
+      #ffffff 94.32%
+    )
+    no-repeat;
+}
+
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+.todo-deleteLine {
+  text-decoration: line-through;
+}
+
+li {
+  .todoClear {
+    visibility: hidden;
+  }
+
+  &:hover {
+    .todoClear {
+      visibility: visible;
+    }
+  }
+}
+
+.styled-checkbox {
+  input {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+    //display:none
+  }
+
+  & {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  // Box.
+  span:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #d7d7d7;
+  }
+
+  // Box hover
+  &:hover span:before {
+    background: #ffd370;
+  }
+
+  // Box focus
+  input:focus + spa:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  input:checked + span:before {
+    background: #ffd370;
+  }
+
+  input:checked {
+    background: #ffd370;
+    size: 30px;
+  }
+
+  // Checkmark. Could be replaced with an image
+  input:checked + span:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+      4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}

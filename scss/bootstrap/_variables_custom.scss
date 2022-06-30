@@ -1,0 +1,37 @@
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%,
+  1: 0.5rem,
+  2: 1rem,
+) !default;
+
+
+
+$border-radius:               .25rem !default;
+$border-radius-sm:            .2rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-xl:            .4rem !default;
+$border-radius-2xl:           .5rem !default;
+
+$border-radius-pill:          50rem !default;
+
+
+
+$utilities:(
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        4: $border-radius-xl,
+        5: $border-radius-2xl,
+        circle: 50%,
+        pill: $border-radius-pill
+      )
+    )
+);
