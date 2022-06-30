@@ -12070,6 +12070,7 @@ a {
 }
 
 .bg-main {
+  height: 100vh;
   font-family: sans-serif;
   background: linear-gradient(172.7deg, #ffd370 5.12%, #ffd370 53.33%, #ffd370 53.44%, #ffffff 53.45%, #ffffff 94.32%) no-repeat;
 }
