@@ -12132,7 +12132,7 @@ li:hover .todoClear {
 }
 
 .styled-checkbox:hover span:before {
-  background: #ffd370;
+  border: 2px solid #d7d7d7;
 }
 
 .styled-checkbox input:focus + spa:before {
