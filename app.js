@@ -122,6 +122,12 @@ function renderTodoList() {
 
   let activeCate = document.querySelector(".todoSelector-item.border-dark").getAttribute('data-cate')
 
+  const noTodo = document.querySelector('.noTodo');
+  const todoTotal = document.querySelector('.todoTotal');
+  noTodo.classList.add("d-none");
+  todoTotal.classList.add("d-none");
+  
+
 
   //todo 列表
   const todoList = document.querySelector(".todoList");
