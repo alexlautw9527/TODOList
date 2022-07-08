@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://kit.fontawesome.com/92d27cddf1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./scss/all.css">
+  <title>土豆:花生什麼樹</title>
+</head>
+
+<body class="bg-main-2">
+    <div class="container mt-6">
+        <div class="row justify-content-center gx-5">
+            <div class="col-5">
+              <div class="d-flex justify-content-start">
+                <img src="./img/left.svg" alt="">
+              </div>
+                
+            </div>
+            <div class="col-3">
+              <div class="pt-6">
+                  <h1 class="fs-3 fw-bold mb-4">最實用的線上待拜事項</h1>
+
+                </div>
+                  <form class="d-flex flex-column" id="loginForm">
+                      <div class="mb-4">
+                        <label for="inputEmail" class="form-label fw-bold">Email</label>
+                        <input type="email" class="form-control rounded-5 border-0" id="inputEmail">
+                      
+                      </div>
+                      <div class="mb-4">
+                        <label for="inputPassword" class="form-label fw-bold">密碼
+                        </label>
+                        <input type="password" class="form-control rounded-5 border-0" id="inputPassword">
+                      </div>
+
+                      <p class="mb-3 align-self-center text-black-50" id="loginResult"></p>
+                     
+                      <button class="btn btn-dark btn-lg px-5 align-self-center rounded-5 mb-4" id ="loginSubmit">登入</button>
+                      
+                      <a class="align-self-center" href="/sign_up.html">註冊帳號</a>
+                    </form>
+                    
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
